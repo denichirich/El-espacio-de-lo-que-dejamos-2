@@ -21,8 +21,8 @@ public class PlayerControlCC : MonoBehaviour
 
     private void OnEnable()
     {
-        NarrativeManager.instance.PreviousInteraction.AddListener(DisableComponent);
-        NarrativeManager.instance.PostInteraction.AddListener(EnableComponent);
+        //NarrativeManager.instance.PreviousInteraction.AddListener(DisableComponent);
+        //NarrativeManager.instance.PostInteraction.AddListener(EnableComponent);
 
     }
     // Start is called before the first frame update

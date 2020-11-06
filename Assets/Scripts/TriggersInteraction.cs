@@ -29,6 +29,7 @@ public class TriggersInteraction : MonoBehaviour
             return false;
         return true;
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (CheckActor(other))
@@ -48,8 +49,12 @@ public class TriggersInteraction : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(interactionKey))
+            print("touch");
+
         if (Input.GetKeyDown(interactionKey) && isEnabledToInteract)
         {
+
             Debug.Log("Todo ok, no hay obstaculos, toque el input");
 
             NarrativeManager.instance.OnPrepairForInteraction(); // desactivo camara, movimiento, etc
