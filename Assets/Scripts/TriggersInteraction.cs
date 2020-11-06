@@ -20,33 +20,47 @@ public class TriggersInteraction : MonoBehaviour
     [Header("Instanciar uno o mas objetos con eventos")]
     public List<GameObject> prefabInteraccion;
 
-    private void OnTriggerStay(Collider other)
+    private bool isEnabledToInteract;
+
+
+    bool CheckActor(Collider other)
     {
         if (other.gameObject.layer != GeneralInfo.PLAYER_LAYER || wasActivated) //evita repetir
-            return;
+            return false;
+        return true;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (CheckActor(other))
+        {
+            isEnabledToInteract = true;
+        }
 
-        RaycastHit auxObstaculos;
 
-        //evito que haya un obstaculo en el medio para poder interactuar
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (CheckActor(other))
+        {
+            isEnabledToInteract = false;
+        }
+    }
 
-        var rayCanInteract = new Ray(transform.position, other.transform.position);
-        var rayval = Physics.Raycast(rayCanInteract, out auxObstaculos, GeneralInfo.TERRAIN_LAYER);
-
-        //Debug.Log(auxObstaculos);
-        //print(rayval);
-
-        if (Input.GetKeyDown(interactionKey) && auxObstaculos.collider == null)
+    private void Update()
+    {
+        if (Input.GetKeyDown(interactionKey) && isEnabledToInteract)
         {
             Debug.Log("Todo ok, no hay obstaculos, toque el input");
 
             NarrativeManager.instance.OnPrepairForInteraction(); // desactivo camara, movimiento, etc
-            GameObject container = Instantiate<GameObject>(new GameObject(), Vector3.zero, Quaternion.identity);
+            GameObject container = Instantiate(new GameObject(), Vector3.zero, Quaternion.identity);
             foreach (var item in prefabInteraccion)
             {
                 Instantiate(item, transform.position, Quaternion.identity, container.transform);
                 // nota:
                 // necesito un script para guardar las posiciones y datos de camara?
                 // estarian en todos los prefabs que quieran crear
+                // - hecho 6/11
             }
             active = wasActivated = true;
             this.enabled = false;

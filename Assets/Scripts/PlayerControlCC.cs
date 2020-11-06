@@ -59,7 +59,7 @@ public class PlayerControlCC : MonoBehaviour
         {
             MovePlayer(sprintVal, direction);
         }
-        else if (isSitting && (horizontal + vertical != 0)) // me quiero salir de estar sentado
+        else if (isSitting && (horizontal * vertical != 0)) // me quiero salir de estar sentado
         {
             ExitSittingState();
         }
