@@ -14,4 +14,6 @@ public static class GeneralInfo
     public static int INTERACTUABLE_LAYER = 10;
     public static int TERRAIN_LAYER = 11;
 
+    public static string selectedCantidadDePersonas = "";
+
 }
