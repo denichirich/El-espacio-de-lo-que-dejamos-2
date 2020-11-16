@@ -17,8 +17,8 @@ public class TriggersInteraction : MonoBehaviour
     private bool active = false;
     private bool wasActivated = false;
 
-    [Header("Instanciar uno o mas objetos con eventos")]
-    public List<GameObject> prefabInteraccion;
+    [Header("Activar uno o mas objetos con eventos")]
+    public List<GameObject> ActivadosEnInteraccion;
 
     private bool isEnabledToInteract;
 
@@ -26,12 +26,15 @@ public class TriggersInteraction : MonoBehaviour
     bool CheckActor(Collider other)
     {
         if (other.gameObject.layer != GeneralInfo.PLAYER_LAYER || wasActivated) //evita repetir
+        {
             return false;
+        }
         return true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        print(other.gameObject.name);
         if (CheckActor(other))
         {
             isEnabledToInteract = true;
@@ -41,6 +44,8 @@ public class TriggersInteraction : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        print("ex " + other.gameObject.name);
+
         if (CheckActor(other))
         {
             isEnabledToInteract = false;
@@ -59,9 +64,12 @@ public class TriggersInteraction : MonoBehaviour
 
             NarrativeManager.instance.OnPrepairForInteraction(); // desactivo camara, movimiento, etc
             GameObject container = Instantiate(new GameObject(), Vector3.zero, Quaternion.identity);
-            foreach (var item in prefabInteraccion)
+            foreach (var item in ActivadosEnInteraccion)
             {
-                Instantiate(item, transform.position, Quaternion.identity, container.transform);
+                //Instantiate(item, transform.position, Quaternion.identity, container.transform);
+
+                item.SetActive(true);
+
                 // nota:
                 // necesito un script para guardar las posiciones y datos de camara?
                 // estarian en todos los prefabs que quieran crear

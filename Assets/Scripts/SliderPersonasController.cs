@@ -17,6 +17,7 @@ public class SliderPersonasController : MonoBehaviour
         print("cambiando slider " + textOverSliderHandle.text);
 
         GeneralInfo.selectedCantidadDePersonas = textOverSliderHandle.text;
+        print(textOverSliderHandle.text + " personas seleccionado.");
         //sobre general info guardo lo que necesite de respuestas del jugador
     }
 

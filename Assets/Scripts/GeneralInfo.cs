@@ -10,9 +10,9 @@ using UnityEngine;
 /// </summary>
 public static class GeneralInfo 
 {
-    public static int PLAYER_LAYER = 9;
-    public static int INTERACTUABLE_LAYER = 10;
-    public static int TERRAIN_LAYER = 11;
+    public static int PLAYER_LAYER = 8;
+    public static int INTERACTUABLE_LAYER = 9;
+    public static int TERRAIN_LAYER = 10;
 
     public static string selectedCantidadDePersonas = "";
 

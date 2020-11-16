@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public static AudioManager instance { get; private set; }
 
-    private AudioSource[] sources;
+    public AudioSource[] sources;
     // 0: music
     // 1: ambient
     // 2: sound effects
@@ -17,12 +17,11 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
 
-        sources = this.GetComponents<AudioSource>();
+        instance = this;
+
+
+        //sources = this.GetComponents<AudioSource>();
     }
 
     public void PlayMusic(AudioClip clip, bool forcePlay)
