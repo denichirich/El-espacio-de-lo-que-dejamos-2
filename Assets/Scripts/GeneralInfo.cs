@@ -15,5 +15,7 @@ public static class GeneralInfo
     public static int TERRAIN_LAYER = 10;
 
     public static string selectedCantidadDePersonas = "";
+    public static int idxCantidadDePersonas = -1;
+
 
 }

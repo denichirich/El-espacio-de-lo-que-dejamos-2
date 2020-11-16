@@ -12,13 +12,19 @@ public class CanvasInteraccion1Tools : MonoBehaviour
     public void ConfirmSelection()
     {
         if (string.IsNullOrEmpty(GeneralInfo.selectedCantidadDePersonas))
+        {
             GeneralInfo.selectedCantidadDePersonas = "Ninguna?";
+            GeneralInfo.idxCantidadDePersonas = -1;
 
+        }
         if (audioConfirm)
             AudioManager.instance.PlayEffect(audioConfirm);
         //tienen que aclararme que quieren que pase con esto.
 
         //Destroy(CanvasDestruirConfirmado);
+        FindObjectOfType<PlayerControlCC_2>().ActivateCoral();
+
+
         CanvasDestruirConfirmado.SetActive(false);
     }
 }

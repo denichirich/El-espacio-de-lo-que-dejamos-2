@@ -16,7 +16,7 @@ public class PlayerControlCC_2 : MonoBehaviour
     public float turnSmoothTime = 0.1f;
 
     private float turnSmoothVel;
-    private bool active = true;
+    public bool active = true;
 
     //variable que agregue para correr
     //public int velCorrer;
@@ -24,40 +24,38 @@ public class PlayerControlCC_2 : MonoBehaviour
 
     public float multipSprint = 1.9f; // esta variable es para la velocidad de correr
 
-    //public float currTimerPasos = 0;
-    //public float timeEntrePasos = 0.28f;
-    //public AudioClip clipCorrer;
+    public List<GameObject> CoralesEnOrden;
 
-    private void OnEnable()
-    {
-        //NarrativeManager.instance.PreviousInteraction.AddListener(DisableComponent);
-        //NarrativeManager.instance.PostInteraction.AddListener(EnableComponent);
-    }
-
-    //void ResetTimer()
+    //private void OnEnable()
     //{
-    //    this.currTimerPasos = 0;
+    //    //NarrativeManager.instance.PreviousInteraction.AddListener(DisableComponent);
+    //    //NarrativeManager.instance.PostInteraction.AddListener(EnableComponent);
     //}
 
-    // Start is called before the first frame update
     void Start()
     {
         this.anim = this.GetComponent<Animator>();
     }
 
+    public void ActivateCoral()
+    {
+        if (!string.IsNullOrEmpty(GeneralInfo.selectedCantidadDePersonas) && 
+            GeneralInfo.idxCantidadDePersonas != -1) // cambio acoplado a lo que necesiten
+        {
+            this.CoralesEnOrden[GeneralInfo.idxCantidadDePersonas].SetActive(true);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (!active)
-            return;
+        
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
         bool switchSitting = Input.GetKeyDown(keyToSit);
-
-        //this.currTimerPasos += Time.deltaTime;
-
+        
         // me fijo si me sente o deje de sentarme para el animador
         // y el tipo de movimiento
 
@@ -66,6 +64,9 @@ public class PlayerControlCC_2 : MonoBehaviour
             isSitting = !isSitting;
             anim.SetBool("isSitting", isSitting);
         }
+
+        if (!active)
+            return;
 
         var sprintVal = Input.GetAxis("Sprint") != 0 ? multipSprint : 1;
 
