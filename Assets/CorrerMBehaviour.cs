@@ -7,7 +7,7 @@ public class CorrerMBehaviour : StateMachineBehaviour
     public AudioClip clipCorrer;
 
 
-    float timerPasos = 0.35f;
+    public float timerPasos = 0.35f;
     float currTimer = 0f;
 
 

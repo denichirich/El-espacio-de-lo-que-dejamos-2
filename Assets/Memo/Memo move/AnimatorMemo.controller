@@ -60,12 +60,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4291537472b4d92458a65891ed3bd420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipCorrer: {fileID: 8300000, guid: e70c5fa5ed6b97f41aa555d63ca56d42, type: 3}
+  clipCorrer: {fileID: 8300000, guid: ceb688b3b95a4ef4fb2214e82ba40c8b, type: 3}
+  timerPasos: 0.35
 --- !u!1107 &-6800368541923924621
 AnimatorStateMachine:
   serializedVersion: 5
@@ -237,6 +238,20 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-4424796422928472105
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4291537472b4d92458a65891ed3bd420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipCorrer: {fileID: 0}
+  timerPasos: 0.35
 --- !u!1101 &-3867840812242968012
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
@@ -275,7 +290,8 @@ AnimatorState:
   m_Transitions:
   - {fileID: -4941491039743255713}
   - {fileID: -5223473230122134138}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -4424796422928472105}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
