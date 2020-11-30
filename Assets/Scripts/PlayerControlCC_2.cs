@@ -7,10 +7,6 @@ public class PlayerControlCC_2 : MonoBehaviour
     public KeyCode keyToSit = KeyCode.X;
     public KeyCode keyToRun = KeyCode.LeftShift;
 
-    [Header("Tiempo hasta sentarse solo")]
-    public float timeToSitDownMax = 2f; //en segundos
-    private float timeTositCurr = 0f;
-
 
     bool isSitting = false;
 
@@ -29,6 +25,8 @@ public class PlayerControlCC_2 : MonoBehaviour
 
     public float multipSprint = 1.9f; // esta variable es para la velocidad de correr
     public float sprintValue = 1.5f;
+
+    [Header("Lista de objetos en el personaje")]
     public List<GameObject> CoralesEnOrden;
 
     public Vector3 direction;
@@ -46,7 +44,7 @@ public class PlayerControlCC_2 : MonoBehaviour
 
     public void ActivateCoral()
     {
-        if (!string.IsNullOrEmpty(GeneralInfo.selectedCantidadDePersonas) && 
+        if (!string.IsNullOrEmpty(GeneralInfo.selectedCantidadDePersonas) &&
             GeneralInfo.idxCantidadDePersonas != -1) // cambio acoplado a lo que necesiten
         {
             this.CoralesEnOrden[GeneralInfo.idxCantidadDePersonas].SetActive(true);
@@ -56,24 +54,19 @@ public class PlayerControlCC_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.timeTositCurr += Time.deltaTime;
+        //this.timeTositCurr += Time.deltaTime;
 
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        bool switchSitting = Input.GetKeyDown(keyToSit) ;
-        
-        
+        bool switchSitting = Input.GetKeyDown(keyToSit);
+
+
         // me fijo si me sente o deje de sentarme para el animador
         // y el tipo de movimiento
 
-        if ( switchSitting )
-        {
-            isSitting = !isSitting;
-            anim.SetBool("isSitting", isSitting );
-            
-        }
+        Sit(switchSitting);
 
         if (!active)
             return;
@@ -83,7 +76,7 @@ public class PlayerControlCC_2 : MonoBehaviour
         direction = new Vector3(horizontal, 0, vertical).normalized;
         //Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
 
-        
+
 
 
         //escuchador para correr
@@ -127,16 +120,25 @@ public class PlayerControlCC_2 : MonoBehaviour
 
     void ExitSittingState()
     {
-
+        //EnableComponent();
         print("saliendo del estado de sentado");
 
     }
+
+    public void Sit(bool val)
+    {
+        isSitting = val;
+        anim.SetBool("isSitting", isSitting);
+        //DisableComponent();
+
+    }
+
     void MovePlayer(float sprintVal, Vector3 direction)
     {
         if (sprintVal > 1)
         {                    //this.anim.speed = 1.3f;
             anim.SetBool("estaCorriendo", true);
-            
+
         }
         else
             anim.SetBool("estaCorriendo", false);

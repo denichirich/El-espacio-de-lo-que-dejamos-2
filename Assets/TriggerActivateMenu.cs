@@ -13,7 +13,7 @@ public class TriggerActivateMenu : MonoBehaviour
         {
             print("entro");
 
-            GuiManagerDemo.instance.SwitchGuiPlaya(true);
+            GuiManagerDemo.instance.SwitchGuiPlaya( true, menuAsociado);
         }
     }
     bool CheckActor(Collider other)
@@ -30,7 +30,7 @@ public class TriggerActivateMenu : MonoBehaviour
         if (CheckActor(other))
         {
             print("salio");
-            GuiManagerDemo.instance.SwitchGuiPlaya(false);
+            GuiManagerDemo.instance.SwitchGuiPlaya(false, menuAsociado);
         }
 
 

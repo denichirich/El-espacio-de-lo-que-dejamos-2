@@ -957,7 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63eda45d716c2f4fb9b5d5c48e18a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuAsociado: {fileID: 1983729879}
+  menuAsociado: {fileID: 642555467}
 --- !u!65 &329640034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2476,7 +2476,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyToSit: 120
   keyToRun: 304
-  timeToSitDownMax: 30
   controller: {fileID: 646239735}
   cam: {fileID: 1384324176}
   speed: 6
@@ -5093,7 +5092,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyToSit: 120
   keyToRun: 304
-  timeToSitDownMax: 30
   controller: {fileID: 1141319242}
   cam: {fileID: 1384324176}
   speed: 6
@@ -5316,6 +5314,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0520f16bfa3708e40852f115171ab79a, type: 3}
   - {fileID: 8300000, guid: 36afd54832ea42244a27d4c0d02a7a6b, type: 3}
   - {fileID: 8300000, guid: ce058f5c956a7f14e90e1b13625151c9, type: 3}
+--- !u!114 &1141319248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141319238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4626a2909d45446badbb0a2b5c6764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToSitDownMax: 30
+  animParam: isSitting
+  timeTositCurr: 0
 --- !u!1001 &1152457216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9929,7 +9942,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyToSit: 120
   keyToRun: 304
-  timeToSitDownMax: 30
   controller: {fileID: 1517623865}
   cam: {fileID: 0}
   speed: 6

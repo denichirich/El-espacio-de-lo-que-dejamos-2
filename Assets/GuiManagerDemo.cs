@@ -13,9 +13,9 @@ public class GuiManagerDemo : MonoBehaviour
             instance = this;
     }
 
-    public void SwitchGuiPlaya(bool val)
+    public void SwitchGuiPlaya(bool val, GameObject targetCanvas)
     {
-        GuiPlaya.SetActive(val);
+        targetCanvas.SetActive(val);
     }
 
 }
