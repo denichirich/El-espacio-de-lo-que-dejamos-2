@@ -8,7 +8,7 @@ public class PlayerControlCC_2 : MonoBehaviour
     public KeyCode keyToRun = KeyCode.LeftShift;
 
 
-    bool isSitting = false;
+    public bool isSitting = false;
 
     Animator anim;
     public CharacterController controller;
@@ -28,6 +28,9 @@ public class PlayerControlCC_2 : MonoBehaviour
 
     [Header("Lista de objetos en el personaje")]
     public List<GameObject> CoralesEnOrden;
+
+    public float horizontal = 0;
+    public float vertical = 0;
 
     public Vector3 direction;
 
@@ -57,8 +60,8 @@ public class PlayerControlCC_2 : MonoBehaviour
         //this.timeTositCurr += Time.deltaTime;
 
 
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        //float horizontal = Input.GetAxisRaw("Horizontal");
+        //float vertical = Input.GetAxisRaw("Vertical");
 
         bool switchSitting = Input.GetKeyDown(keyToSit);
 
@@ -71,6 +74,9 @@ public class PlayerControlCC_2 : MonoBehaviour
 
         if (!active)
             return;
+
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
 
         sprintValue = Input.GetAxis("Sprint") != 0 ? multipSprint : 1;
 
@@ -100,7 +106,7 @@ public class PlayerControlCC_2 : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (direction.magnitude >= 0.1f && !isSitting) // check constante
+        if (direction.magnitude >= 0.1f && !isSitting && active) // check constante
         {
             MovePlayer(sprintValue, direction);
 

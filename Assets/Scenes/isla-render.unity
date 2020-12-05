@@ -2477,6 +2477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyToSit: 120
   keyToRun: 304
+  isSitting: 0
   controller: {fileID: 646239735}
   cam: {fileID: 1384324176}
   speed: 6
@@ -2485,6 +2486,8 @@ MonoBehaviour:
   multipSprint: 1.9
   sprintValue: 1.5
   CoralesEnOrden: []
+  horizontal: 0
+  vertical: 0
   direction: {x: 0, y: 0, z: 0}
 --- !u!95 &646239738 stripped
 Animator:
@@ -5094,10 +5097,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyToSit: 120
   keyToRun: 304
+  isSitting: 0
   controller: {fileID: 1141319242}
   cam: {fileID: 1384324176}
   speed: 6
-  turnSmoothTime: 0.26
+  turnSmoothTime: 1.25
   active: 1
   multipSprint: 6
   sprintValue: 1.5
@@ -5107,6 +5111,8 @@ MonoBehaviour:
   - {fileID: 1076629848}
   - {fileID: 188366078}
   - {fileID: 402655492}
+  horizontal: 0
+  vertical: 0
   direction: {x: 0, y: 0, z: 0}
 --- !u!136 &1141319240
 CapsuleCollider:
@@ -9944,6 +9950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyToSit: 120
   keyToRun: 304
+  isSitting: 0
   controller: {fileID: 1517623865}
   cam: {fileID: 0}
   speed: 6
@@ -9957,6 +9964,8 @@ MonoBehaviour:
   - {fileID: 76792975}
   - {fileID: 1671920012}
   - {fileID: 286486464}
+  horizontal: 0
+  vertical: 0
   direction: {x: 0, y: 0, z: 0}
 --- !u!54 &1517623864
 Rigidbody:
