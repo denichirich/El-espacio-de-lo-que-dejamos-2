@@ -34,7 +34,7 @@ public class SitAfterTime : MonoBehaviour
                 timeTositCurr = 0f;
             }
         }
-        else 
+        else if(Input.anyKey)
             timeTositCurr = 0f;
     }
 }

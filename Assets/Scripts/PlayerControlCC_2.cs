@@ -66,7 +66,8 @@ public class PlayerControlCC_2 : MonoBehaviour
         // me fijo si me sente o deje de sentarme para el animador
         // y el tipo de movimiento
 
-        Sit(switchSitting);
+        if (switchSitting)
+            Sit(!anim.GetBool("isSitting"));
 
         if (!active)
             return;

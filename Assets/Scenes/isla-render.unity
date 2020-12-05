@@ -958,6 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuAsociado: {fileID: 642555467}
+  canReactivate: 1
 --- !u!65 &329640034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2538,7 +2539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb80c0c0fde175f4ea6f21db1847c646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GuiPlaya: {fileID: 642555467}
+  alreadyActivated: []
 --- !u!1 &672233057
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,6 +2959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuAsociado: {fileID: 1983729879}
+  canReactivate: 0
 --- !u!1 &731608795
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,7 +5099,7 @@ MonoBehaviour:
   speed: 6
   turnSmoothTime: 0.26
   active: 1
-  multipSprint: 2.2
+  multipSprint: 6
   sprintValue: 1.5
   CoralesEnOrden:
   - {fileID: 868031163}
@@ -5326,7 +5328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4626a2909d45446badbb0a2b5c6764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSitDownMax: 30
+  timeToSitDownMax: 6
   animParam: isSitting
   timeTositCurr: 0
 --- !u!1001 &1152457216
