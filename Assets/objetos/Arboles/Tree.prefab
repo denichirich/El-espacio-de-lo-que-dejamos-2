@@ -10691,19 +10691,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpSpecMap:
-        m_Texture: {fileID: 2800000, guid: 9c60e590b8fef9944a7b1b11ac51bc61, type: 3}
+        m_Texture: {fileID: 2800000, guid: f983359d9236e0a459c2a2d8b1d9331a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5993334632d1ae7428a47bdb3ed10cd7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 87f2dba52df632345b5c7d08350092f9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTex:
-        m_Texture: {fileID: 2800000, guid: 7f227c09e015d2f4190cd5eb8303efa1, type: 3}
+        m_Texture: {fileID: 2800000, guid: d755aedcb8b057740aac43eab9c0bb5d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 2800000, guid: f7add82100663e24ea54e960ac182940, type: 3}
+        m_Texture: {fileID: 2800000, guid: dd36a152a3dc02b4c862f4e20c65fb6d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -10714,7 +10714,7 @@ Material:
     - _TranslucencyViewDependency: 0.857
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.40999997, a: 1}
+    - _TranslucencyColor: {r: 1, g: 1, b: 1, a: 0}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
@@ -10738,15 +10738,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpSpecMap:
-        m_Texture: {fileID: 2800000, guid: 9c60e590b8fef9944a7b1b11ac51bc61, type: 3}
+        m_Texture: {fileID: 2800000, guid: f983359d9236e0a459c2a2d8b1d9331a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5993334632d1ae7428a47bdb3ed10cd7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 87f2dba52df632345b5c7d08350092f9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 2800000, guid: f7add82100663e24ea54e960ac182940, type: 3}
+        m_Texture: {fileID: 2800000, guid: dd36a152a3dc02b4c862f4e20c65fb6d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
