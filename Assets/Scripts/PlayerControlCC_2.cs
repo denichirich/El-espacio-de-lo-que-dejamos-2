@@ -99,13 +99,6 @@ public class PlayerControlCC_2 : MonoBehaviour
         //{
         //    anim.SetBool("estaCorriendo", false);
         //}
-
-
-
-    }
-
-    private void LateUpdate()
-    {
         if (direction.magnitude >= 0.1f && !isSitting && active) // check constante
         {
             MovePlayer(sprintValue, direction);
@@ -121,6 +114,11 @@ public class PlayerControlCC_2 : MonoBehaviour
             anim.SetBool("estaCorriendo", false);
         }
 
+
+    }
+
+    private void LateUpdate()
+    {
         anim.SetFloat("VelX", (Input.GetAxisRaw("Horizontal")));
         anim.SetFloat("VelY", Input.GetAxisRaw("Vertical"));
     }
