@@ -78,8 +78,8 @@ Material:
     - _WaveScale: 0.0216
     - _ZWrite: 1
     m_Colors:
-    - WaveSpeed: {r: 10.46, g: 16.29, b: -3.8, a: 14.77}
+    - WaveSpeed: {r: 1.1, g: 258.83, b: -19, a: 26.7}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _horizonColor: {r: 0.44705883, g: 0.89411765, b: 1, a: 0.64705884}
+    - _horizonColor: {r: 0.2988608, g: 0.75895494, b: 0.8679245, a: 0.64705884}
   m_BuildTextureStacks: []
