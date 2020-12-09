@@ -6,7 +6,7 @@ public class SitAfterTime : MonoBehaviour
 {
 
     [Header("Tiempo hasta sentarse solo")]
-    public float timeToSitDownMax = 2f; //en segundos
+    public float timeToSitDownMax = 30f; //en segundos
     [Header("Accion del animator disparada")]
     public string animParam = "isSitting";
 

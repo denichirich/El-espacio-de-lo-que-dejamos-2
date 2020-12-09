@@ -24,6 +24,7 @@ public class CanvasInteraccion1Tools : MonoBehaviour
         //Destroy(CanvasDestruirConfirmado);
         FindObjectOfType<PlayerControlCC_2>().ActivateCoral();
 
+        NarrativeManager.instance.OnPostInteraction();
 
         CanvasDestruirConfirmado.SetActive(false);
     }

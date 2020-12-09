@@ -11,6 +11,7 @@ public class TriggerActivateMenu : MonoBehaviour
     {
         if (CheckActor(other))
         {
+            Debug.Log("entrando playa");
             GuiManagerDemo.instance.SwitchGuiPlaya(true, menuAsociado);
         }
     }
