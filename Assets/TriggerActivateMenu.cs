@@ -5,14 +5,15 @@ using UnityEngine;
 public class TriggerActivateMenu : MonoBehaviour
 {
     public GameObject menuAsociado;
-    public bool canReactivate = true;
 
     private void OnTriggerEnter(Collider other)
     {
         if (CheckActor(other))
+
         {
-            Debug.Log("entrando playa");
-            GuiManagerDemo.instance.SwitchGuiPlaya(true, menuAsociado);
+            print("entro");
+
+            GuiManagerDemo.instance.SwitchGuiPlaya(true);
         }
     }
     bool CheckActor(Collider other)
@@ -28,7 +29,8 @@ public class TriggerActivateMenu : MonoBehaviour
     {
         if (CheckActor(other))
         {
-                GuiManagerDemo.instance.SwitchGuiPlaya(false, menuAsociado);
+            print("salio");
+            GuiManagerDemo.instance.SwitchGuiPlaya(false);
         }
 
 

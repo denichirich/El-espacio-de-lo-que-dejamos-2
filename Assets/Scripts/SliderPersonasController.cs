@@ -10,12 +10,6 @@ public class SliderPersonasController : MonoBehaviour
     [Header("Opciones mostradas")]
     public List<string> sliderPrintedValues;
 
-    private void Start()
-    {
-        GeneralInfo.selectedCantidadDePersonas = sliderPrintedValues[0];
-        GeneralInfo.idxCantidadDePersonas = Mathf.RoundToInt(slider.value);
-    }
-
     // Start is called before the first frame update
     public void OnValueChange()
     {
