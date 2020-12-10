@@ -54,9 +54,6 @@ public class TriggersInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(interactionKey))
-            print("touch");
-
         if (Input.GetKeyDown(interactionKey) && isEnabledToInteract)
         {
 
