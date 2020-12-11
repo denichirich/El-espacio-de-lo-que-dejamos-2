@@ -5725,7 +5725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1067852381
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10789,7 +10789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1248280095
 Transform:
   m_ObjectHideFlags: 0
@@ -18556,7 +18556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 577291889303878841, guid: 31397f7c850762742a1285f3d4da68ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.429999
+      value: -12.51
       objectReference: {fileID: 0}
     - target: {fileID: 577291889303878841, guid: 31397f7c850762742a1285f3d4da68ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18598,6 +18598,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 577291889303878847, guid: 31397f7c850762742a1285f3d4da68ce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577291889303878847, guid: 31397f7c850762742a1285f3d4da68ce, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 038658f08c78a3c4aabe907c6255bb0f, type: 2}
+    - target: {fileID: 577291889303878847, guid: 31397f7c850762742a1285f3d4da68ce, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 48bbde3049f29b247a56af17d2b0381f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31397f7c850762742a1285f3d4da68ce, type: 3}
 --- !u!1001 &1445786801238023941
