@@ -33,7 +33,8 @@ public class PararseMBehaviour : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        controller.activeMovement = true; // reactivo movimiento
+        controller.active = true; // reactivo movimiento
+        GameObject.FindObjectOfType<CameraAdjustFreelook>().Relocate();
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

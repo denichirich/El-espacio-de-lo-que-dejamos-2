@@ -18,9 +18,7 @@ public class InteractionPostEventCollection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (ListaLuces != null)
-            ListaLuces = new List<GameObject>();
-
+        
         foreach (var item in gameObject.GetComponentsInChildren<Transform>())
         {
             ListaLuces.Add(item.gameObject);
