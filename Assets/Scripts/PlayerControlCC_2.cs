@@ -17,7 +17,15 @@ public class PlayerControlCC_2 : MonoBehaviour
     public float turnSmoothTime = 0.1f;
 
     private float turnSmoothVel;
-    public bool active = true;
+
+
+    /// <summary>
+    /// estas dos variables son para controlar si se pueden usar los controles
+    /// comienza inactivo en los 2
+    /// </summary>
+    public bool activeMovement = true;
+    public bool activeSitting = true;
+
 
     //variable que agregue para correr
     //public int velCorrer;
@@ -43,6 +51,12 @@ public class PlayerControlCC_2 : MonoBehaviour
     void Start()
     {
         this.anim = this.GetComponent<Animator>();
+
+        GameManagerActions.current.startGameEvent.AddListener(EnableComponent);
+        //GameManagerActions.current.startGameEvent.AddListener(EnableComponent);
+
+        // cuando se toca el boton de entrar al juego
+        this.Sit(true);
     }
 
     public void ActivateCoral()
@@ -63,16 +77,17 @@ public class PlayerControlCC_2 : MonoBehaviour
         //float horizontal = Input.GetAxisRaw("Horizontal");
         //float vertical = Input.GetAxisRaw("Vertical");
 
-        bool switchSitting = Input.GetKeyDown(keyToSit);
 
+        if (activeSitting)
+        {
+            bool switchSitting = Input.GetKeyDown(keyToSit);
+            // me fijo si me sente o deje de sentarme para el animador
+            // y el tipo de movimiento
+            if (switchSitting)
+                Sit(!anim.GetBool("isSitting"));
+        }
 
-        // me fijo si me sente o deje de sentarme para el animador
-        // y el tipo de movimiento
-
-        if (switchSitting)
-            Sit(!anim.GetBool("isSitting"));
-
-        if (!active)
+        if (!activeMovement)
             return;
 
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -99,7 +114,7 @@ public class PlayerControlCC_2 : MonoBehaviour
         //{
         //    anim.SetBool("estaCorriendo", false);
         //}
-        if (direction.magnitude >= 0.1f && !isSitting && active) // check constante
+        if (direction.magnitude >= 0.1f && !isSitting && activeMovement) // check constante
         {
             MovePlayer(sprintValue, direction);
 
@@ -127,7 +142,6 @@ public class PlayerControlCC_2 : MonoBehaviour
     {
         //EnableComponent();
         print("saliendo del estado de sentado");
-
     }
 
     public void Sit(bool val)
@@ -167,11 +181,13 @@ public class PlayerControlCC_2 : MonoBehaviour
         anim.SetFloat("VelX", 0);
         anim.SetFloat("VelY", 0);
 
-        this.active = false;
+        this.activeMovement = false;
+        this.activeSitting = false;
     }
 
     void EnableComponent()
     {
-        this.active = true;
+        this.activeMovement = true;
+        this.activeSitting = true;
     }
 }
