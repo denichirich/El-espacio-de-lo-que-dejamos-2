@@ -14,8 +14,6 @@ public class MainMenuUIScript : MonoBehaviour
     {
         ShowMainMenu();
     }
-
-
     public void ShowMainMenu()
     {
         mainPanel.SetActive(true);
@@ -25,25 +23,19 @@ public class MainMenuUIScript : MonoBehaviour
     }
     public void PlayNextScene()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        GameManagerActions.current.startIntroductionEvent.Invoke();
-
-        this.mainPanel.SetActive(false);
-        this.howToPlayPanel.SetActive(false);
-        this.creditsPanel.SetActive(false);
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void ShowCredits()
     {
         creditsPanel.SetActive(true);
-        //print("credits");
+        print("credits");
         mainPanel.SetActive(false);
         howToPlayPanel.SetActive(false);
     }
     public void ShowHowToPlay()
     {
         howToPlayPanel.SetActive(true);
-        //print("controles");
+        print("controles");
 
         mainPanel.SetActive(false);
         creditsPanel.SetActive(false);

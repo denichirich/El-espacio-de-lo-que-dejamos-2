@@ -15,8 +15,6 @@ public class GameManagerActions : MonoBehaviour
 
     public UnityEvent defeatEvent;
     public UnityEvent winEvent;
-    public UnityEvent startGameEvent;
-    public UnityEvent startIntroductionEvent;
 
     private void Awake()
     {
@@ -26,10 +24,7 @@ public class GameManagerActions : MonoBehaviour
             defeatEvent = new UnityEvent();
         if (winEvent== null)
             winEvent = new UnityEvent();
-        if (startGameEvent == null)
-            startGameEvent = new UnityEvent();
-        if (startIntroductionEvent == null)
-            startIntroductionEvent = new UnityEvent();
+
     }
 
     void LateUpdate()
@@ -47,7 +42,6 @@ public class GameManagerActions : MonoBehaviour
 #endif
 
     }
-
     public void ExitGame()
     {
         Application.Quit();
