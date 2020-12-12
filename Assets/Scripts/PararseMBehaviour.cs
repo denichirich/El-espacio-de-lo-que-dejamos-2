@@ -34,6 +34,7 @@ public class PararseMBehaviour : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         controller.active = true; // reactivo movimiento
+        GameObject.FindObjectOfType<CameraAdjustFreelook>().Relocate();
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
