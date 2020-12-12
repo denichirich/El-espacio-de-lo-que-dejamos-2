@@ -13946,7 +13946,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804730698}
-  m_LocalRotation: {x: -0.01118396, y: 0.7158841, z: 0.011469931, w: 0.6980354}
+  m_LocalRotation: {x: -0.011195014, y: 0.71521086, z: 0.011459151, w: 0.69872516}
   m_LocalPosition: {x: -0.5999756, y: 0.8100004, z: 72.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19250,6 +19250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 903081015}
+  - component: {fileID: 903081016}
   m_Layer: 0
   m_Name: Luces interaccion
   m_TagString: Untagged
@@ -19273,6 +19274,19 @@ Transform:
   m_Father: {fileID: 1697154215}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &903081016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903081014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36be21fd695390d40b83bbf968c41328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListaLuces: []
 --- !u!1 &907325885
 GameObject:
   m_ObjectHideFlags: 0
@@ -27060,7 +27074,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384324175}
-  m_LocalRotation: {x: -0.00034482477, y: 0.9996221, z: 0.014939918, w: 0.023072045}
+  m_LocalRotation: {x: -0.0002983362, y: 0.99968904, z: 0.014940918, w: 0.019961517}
   m_LocalPosition: {x: 22.234924, y: -0.48945808, z: -102.481155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -27495,6 +27509,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   winEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  startGameEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  startIntroductionEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1468377580
@@ -32473,7 +32493,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484444236}
-  m_LocalRotation: {x: -0.020201072, y: -0.062155455, z: 0.0012582982, w: -0.99786127}
+  m_LocalRotation: {x: -0.020201076, y: -0.06215537, z: 0.0012582964, w: -0.99786127}
   m_LocalPosition: {x: 1.4381104, y: -1.1788645, z: -6.2513123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -38172,9 +38192,9 @@ MonoBehaviour:
   PostInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 21300000, guid: 072a8f85667cd124683d7def0be0f9f5, type: 3}
         m_TargetAssemblyTypeName: InteractionPostEventCollection, Assembly-CSharp
-        m_MethodName: ActivarLucesDeEscena
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48443,7 +48463,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823203240}
-  m_LocalRotation: {x: -0.0003448247, y: 0.9996221, z: 0.014939916, w: 0.023072043}
+  m_LocalRotation: {x: -0.0002983362, y: 0.9996891, z: 0.014940919, w: 0.019961521}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -50414,7 +50434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9094474533577477838, guid: 823b60f32ac9c11498a703390af65a10, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -57.93814
+      value: -61.338135
       objectReference: {fileID: 0}
     - target: {fileID: 9094474533577477838, guid: 823b60f32ac9c11498a703390af65a10, type: 3}
       propertyPath: m_LocalRotation.x
@@ -50422,7 +50442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9094474533577477838, guid: 823b60f32ac9c11498a703390af65a10, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.14660083
+      value: -0.14660084
       objectReference: {fileID: 0}
     - target: {fileID: 9094474533577477838, guid: 823b60f32ac9c11498a703390af65a10, type: 3}
       propertyPath: m_LocalRotation.z

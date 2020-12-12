@@ -33,7 +33,7 @@ public class PararseMBehaviour : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        controller.active = true; // reactivo movimiento
+        controller.activeMovement = true; // reactivo movimiento
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
