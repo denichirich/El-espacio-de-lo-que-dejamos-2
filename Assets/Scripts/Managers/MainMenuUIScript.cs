@@ -28,13 +28,14 @@ public class MainMenuUIScript : MonoBehaviour
     public void ShowCredits()
     {
         creditsPanel.SetActive(true);
-
+        print("credits");
         mainPanel.SetActive(false);
         howToPlayPanel.SetActive(false);
     }
     public void ShowHowToPlay()
     {
         howToPlayPanel.SetActive(true);
+        print("controles");
 
         mainPanel.SetActive(false);
         creditsPanel.SetActive(false);
