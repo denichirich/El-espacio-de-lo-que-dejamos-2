@@ -478,7 +478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -12.63, y: 41.5}
+  m_AnchoredPosition: {x: -12.63, y: 57.7}
   m_SizeDelta: {x: 190.8999, y: 57.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40901592
@@ -712,7 +712,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5227a345c163da24789f21f912e0f05c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11732,6 +11732,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694124794}
     m_Modifications:
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b766532f2f0304aa545cfc20c8bdfd, type: 2}
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d80437f6be06ec24bb2dc8908dbb1ab5, type: 2}
     - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_Name
       value: arbolito flaco Variant
@@ -11820,10 +11828,10 @@ RectTransform:
   m_Father: {fileID: 1061340209}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -8.799988, y: -276.5}
-  m_SizeDelta: {x: 957.8, y: -415.1}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -8.799988, y: 297.6}
+  m_SizeDelta: {x: 957.8, y: -415.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320276690
 MonoBehaviour:
@@ -11872,8 +11880,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.2
-  m_fontSizeBase: 18.2
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -12194,7 +12202,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -135, y: 11.1}
-  m_SizeDelta: {x: 200, y: 49.73}
+  m_SizeDelta: {x: 269.2, y: 49.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &364505240
 MonoBehaviour:
@@ -12243,10 +12251,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.4
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 1.9
   m_fontSizeMax: 85.2
   m_fontStyle: 0
@@ -13110,6 +13118,76 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 338.39362, y: 182.87262, z: 85.76422}
   m_Center: {x: 43.616364, y: -24.043243, z: -783.6305}
+--- !u!1001 &590905343
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 694124794}
+    m_Modifications:
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b766532f2f0304aa545cfc20c8bdfd, type: 2}
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d80437f6be06ec24bb2dc8908dbb1ab5, type: 2}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Name
+      value: arbolito flaco Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 94.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.7872715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 524.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+--- !u!4 &590905344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+  m_PrefabInstance: {fileID: 590905343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &600846044 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9094474533577477838, guid: 823b60f32ac9c11498a703390af65a10, type: 3}
@@ -13652,7 +13730,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5227a345c163da24789f21f912e0f05c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -13884,6 +13962,10 @@ Transform:
   - {fileID: 1461798796}
   - {fileID: 4047196785746356893}
   - {fileID: 309321574}
+  - {fileID: 923826900}
+  - {fileID: 1851560655}
+  - {fileID: 590905344}
+  - {fileID: 7928516239874068602}
   m_Father: {fileID: 13752724}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14399,7 +14481,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804730698}
-  m_LocalRotation: {x: -0.011183899, y: 0.7158879, z: 0.011469995, w: 0.6980315}
+  m_LocalRotation: {x: -0.011175614, y: 0.71639156, z: 0.011478063, w: 0.69751453}
   m_LocalPosition: {x: -0.5999756, y: 0.8100004, z: 72.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19427,7 +19509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -17.600006, y: -553.2}
+  m_AnchoredPosition: {x: -17.600006, y: -404.5}
   m_SizeDelta: {x: 168.49524, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &846797879
@@ -19743,6 +19825,76 @@ Animator:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8405594022218817281, guid: b71abedd520beb54bbacdaaf14431324, type: 3}
   m_PrefabInstance: {fileID: 209888590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &923826899
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 694124794}
+    m_Modifications:
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b766532f2f0304aa545cfc20c8bdfd, type: 2}
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d80437f6be06ec24bb2dc8908dbb1ab5, type: 2}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Name
+      value: arbolito flaco Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 83.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.7872715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 371
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+--- !u!4 &923826900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+  m_PrefabInstance: {fileID: 923826899}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &927443166
 GameObject:
@@ -20121,7 +20273,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5227a345c163da24789f21f912e0f05c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -28596,9 +28748,6 @@ MonoBehaviour:
   startGameEvent:
     m_PersistentCalls:
       m_Calls: []
-  startIntroductionEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1461798795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28606,6 +28755,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694124794}
     m_Modifications:
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b766532f2f0304aa545cfc20c8bdfd, type: 2}
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d80437f6be06ec24bb2dc8908dbb1ab5, type: 2}
     - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_Name
       value: arbolito flaco Variant
@@ -33640,7 +33797,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484444236}
-  m_LocalRotation: {x: -0.020252181, y: -0.062145427, z: 0.00043745147, w: -0.9978615}
+  m_LocalRotation: {x: -0.020252183, y: -0.062145222, z: 0.0004374466, w: -0.99786156}
   m_LocalPosition: {x: 1.4380398, y: -1.178864, z: -6.2513123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -39228,6 +39385,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694124794}
     m_Modifications:
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b766532f2f0304aa545cfc20c8bdfd, type: 2}
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d80437f6be06ec24bb2dc8908dbb1ab5, type: 2}
     - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_Name
       value: arbolito flaco Variant
@@ -39667,7 +39832,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5227a345c163da24789f21f912e0f05c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -39891,7 +40056,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5227a345c163da24789f21f912e0f05c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -49978,7 +50143,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823203240}
-  m_LocalRotation: {x: -0.01770233, y: 0.0061079552, z: 0.000074430485, w: 0.9998246}
+  m_LocalRotation: {x: -0.017702535, y: 0.0037792847, z: 0.000046053843, w: 0.9998362}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -50120,6 +50285,76 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &1851560654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 694124794}
+    m_Modifications:
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b766532f2f0304aa545cfc20c8bdfd, type: 2}
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d80437f6be06ec24bb2dc8908dbb1ab5, type: 2}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Name
+      value: arbolito flaco Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.7872715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 277.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+--- !u!4 &1851560655 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+  m_PrefabInstance: {fileID: 1851560654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1914218338
 GameObject:
   m_ObjectHideFlags: 0
@@ -50634,7 +50869,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -137.2, y: 12}
-  m_SizeDelta: {x: 209.3, y: 50}
+  m_SizeDelta: {x: 273.92, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2050588418
 MonoBehaviour:
@@ -50683,10 +50918,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.2
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 17.46
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -51260,8 +51495,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -51955,6 +52190,76 @@ PrefabInstance:
     - {fileID: 6797638622982919188, guid: a946a1d5911fd0e4a9d8b708e5ee7ecb, type: 3}
     - {fileID: 6797638622982919191, guid: a946a1d5911fd0e4a9d8b708e5ee7ecb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a946a1d5911fd0e4a9d8b708e5ee7ecb, type: 3}
+--- !u!1001 &7928516239874068601
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 694124794}
+    m_Modifications:
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d80437f6be06ec24bb2dc8908dbb1ab5, type: 2}
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b766532f2f0304aa545cfc20c8bdfd, type: 2}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Name
+      value: arbolito flaco Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 87.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.7872715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -197.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+--- !u!4 &7928516239874068602 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+  m_PrefabInstance: {fileID: 7928516239874068601}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7942729509498501261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51962,6 +52267,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694124794}
     m_Modifications:
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b766532f2f0304aa545cfc20c8bdfd, type: 2}
+    - target: {fileID: 1070301733629859219, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d80437f6be06ec24bb2dc8908dbb1ab5, type: 2}
     - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_Name
       value: arbolito flaco
