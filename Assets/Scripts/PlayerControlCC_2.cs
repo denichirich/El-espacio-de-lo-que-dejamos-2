@@ -52,6 +52,11 @@ public class PlayerControlCC_2 : MonoBehaviour
     {
         this.anim = this.GetComponent<Animator>();
 
+        //GameObject.FindObjectOfType<PlayerControlCC_2>();
+        activeMovement = false;
+        activeSitting = false;
+
+
         GameManagerActions.current.startGameEvent.AddListener(EnableComponent);
         NarrativeManager.instance.PreviousInteraction.AddListener(SetInteractingMode);
         NarrativeManager.instance.PostInteraction.AddListener(QuitInteractingMode);

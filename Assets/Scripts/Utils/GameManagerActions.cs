@@ -16,7 +16,7 @@ public class GameManagerActions : MonoBehaviour
     public UnityEvent defeatEvent;
     public UnityEvent winEvent;
     public UnityEvent startGameEvent;
-    public UnityEvent startIntroductionEvent;
+    //public UnityEvent startIntroductionEvent;
 
     private void Awake()
     {
@@ -28,8 +28,8 @@ public class GameManagerActions : MonoBehaviour
             winEvent = new UnityEvent();
         if (startGameEvent == null)
             startGameEvent = new UnityEvent();
-        if (startIntroductionEvent == null)
-            startIntroductionEvent = new UnityEvent();
+        //if (startIntroductionEvent == null)
+        //    startIntroductionEvent = new UnityEvent();
     }
 
     void LateUpdate()

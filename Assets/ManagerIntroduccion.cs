@@ -1,32 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ManagerIntroduccion : MonoBehaviour
 {
+
+    public static ManagerIntroduccion instance { get; private set; }
+
     public List<TextIntroduction> textosIntro;
     [SerializeField]
     TextIntroduction current;
+
+    public UnityEvent startIntroductionEvent;
 
     public int currIdx = 0;
 
     public bool started = false;
 
-    PlayerControlCC_2 test;
+    //PlayerControlCC_2 test;
 
 
     //public float currTimer = 0;
     //public float timeMaxText
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        //instance.textosIntro = new List<TextIntroduction>();
+
+    }
     void Start()
     {
-        test = GameObject.FindObjectOfType<PlayerControlCC_2>();
-        test.activeMovement = false;
-        test.activeSitting = false;
+        this.startIntroductionEvent.AddListener(this.StartSequence);
+        //test = 
+        //GameManagerActions.current.startIntroductionEvent.AddListener(this.StartSequence);
 
-        GameManagerActions.current.startIntroductionEvent.AddListener(this.StartSequence);
-        GameManagerActions.current.startGameEvent.AddListener(this.DisableChildren);
+
+        //GameManagerActions.current.startGameEvent.AddListener(this.DisableChildren);
+
+        
 
     }
 
@@ -35,9 +50,11 @@ public class ManagerIntroduccion : MonoBehaviour
     {
         if (!started)
             return;
+        
 
         if (current.anyKey && Input.anyKeyDown)
         {
+
             PassNext();
         }
         else if (Input.GetKeyDown(current.requiredKey) && !current.anyKey)
@@ -64,18 +81,18 @@ public class ManagerIntroduccion : MonoBehaviour
 
     public void StartSequence()
     {
-        if (current == null)
-        {
-            this.currIdx = 0;
-            this.current = textosIntro[currIdx];
-            textosIntro[currIdx].gameObject.SetActive(true);
-            this.started = true;
-        }
+        //if (current == null)
+        //{
+        this.currIdx = 0;
+        this.current = textosIntro[currIdx];
+        textosIntro[currIdx].gameObject.SetActive(true);
+        this.started = true;
+        //}
     }
 
     public void DisableChildren()
     {
-        foreach(var child in this.textosIntro)
+        foreach (var child in this.textosIntro)
         {
             child.gameObject.SetActive(false);
         }

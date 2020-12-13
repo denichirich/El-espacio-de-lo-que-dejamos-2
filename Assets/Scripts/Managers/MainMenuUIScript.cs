@@ -26,8 +26,10 @@ public class MainMenuUIScript : MonoBehaviour
     public void PlayNextScene()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        GameManagerActions.current.startIntroductionEvent.Invoke();
 
+        ManagerIntroduccion.instance.startIntroductionEvent.Invoke();
+        //ManagerIntroduccion.instance.DisableChildren();
+        Debug.Log("playing ");
         this.mainPanel.SetActive(false);
         this.howToPlayPanel.SetActive(false);
         this.creditsPanel.SetActive(false);
