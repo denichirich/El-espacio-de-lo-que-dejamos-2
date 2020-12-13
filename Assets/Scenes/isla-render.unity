@@ -14357,7 +14357,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804730698}
-  m_LocalRotation: {x: -0.011194957, y: 0.7152142, z: 0.011459201, w: 0.69872177}
+  m_LocalRotation: {x: -0.011122969, y: 0.71957606, z: 0.011529084, w: 0.6942288}
   m_LocalPosition: {x: -0.5999756, y: 0.8100004, z: 72.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14381,7 +14381,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 20
+  m_Priority: 8
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 543450652809352006}
   m_Follow: {fileID: 543450652809352006}
@@ -32766,7 +32766,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484444236}
-  m_LocalRotation: {x: -0.020201208, y: -0.06215583, z: 0.0012583138, w: -0.99786127}
+  m_LocalRotation: {x: -0.02020121, y: -0.06215583, z: 0.001258314, w: -0.99786127}
   m_LocalPosition: {x: 1.4380836, y: -1.1788645, z: -6.2512817}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -32799,6 +32799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchTagDirector: dirMostrarCorales
+  timeConf: 4.199999809265137
 --- !u!1 &1492014161
 GameObject:
   m_ObjectHideFlags: 0
@@ -49043,7 +49044,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823203240}
-  m_LocalRotation: {x: -0.00007933657, y: -0.9968013, z: -0.030875921, w: -0.07371392}
+  m_LocalRotation: {x: -0.0001009805, y: -0.99511135, z: -0.030823577, w: -0.09382568}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
