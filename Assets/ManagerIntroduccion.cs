@@ -86,6 +86,12 @@ public class ManagerIntroduccion : MonoBehaviour
         this.currIdx = 0;
         this.current = textosIntro[currIdx];
         textosIntro[currIdx].gameObject.SetActive(true);
+
+        foreach(Transform item in textosIntro[currIdx].GetComponentInChildren<Transform>())
+        {
+            item.gameObject.SetActive(true);
+        }
+
         this.started = true;
         //}
     }
