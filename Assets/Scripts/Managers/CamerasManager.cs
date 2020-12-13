@@ -7,9 +7,9 @@ public class CamerasManager : MonoBehaviour
 {
     public static CamerasManager instance { get; private set; }
 
-    [HideInInspector]
+    //[HideInInspector]
     public CinemachineVirtualCamera currentCam;
-    [HideInInspector]
+    //[HideInInspector]
     public CinemachineVirtualCamera lastCam;
     [HideInInspector]
     public CameraShake shakeVisible;
