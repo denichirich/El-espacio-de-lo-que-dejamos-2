@@ -53,6 +53,9 @@ public class PlayerControlCC_2 : MonoBehaviour
         this.anim = this.GetComponent<Animator>();
 
         GameManagerActions.current.startGameEvent.AddListener(EnableComponent);
+        NarrativeManager.instance.PreviousInteraction.AddListener(SetInteractingMode);
+        NarrativeManager.instance.PostInteraction.AddListener(QuitInteractingMode);
+
         //GameManagerActions.current.startGameEvent.AddListener(EnableComponent);
 
         // cuando se toca el boton de entrar al juego
@@ -67,6 +70,19 @@ public class PlayerControlCC_2 : MonoBehaviour
             this.CoralesEnOrden[GeneralInfo.idxCantidadDePersonas].SetActive(true);
         }
     }
+
+    public void SetInteractingMode()
+    {
+        this.anim.SetBool("isInteracting", true);
+        this.DisableComponent();
+    }
+
+    public void QuitInteractingMode()
+    {
+        this.anim.SetBool("isInteracting", false);
+        this.EnableComponent();
+    }
+
 
     // Update is called once per frame
     void Update()
