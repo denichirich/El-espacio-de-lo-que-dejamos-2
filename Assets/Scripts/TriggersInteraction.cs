@@ -57,6 +57,7 @@ public class TriggersInteraction : MonoBehaviour
         if (Input.GetKeyDown(interactionKey) && isEnabledToInteract)
         {
 
+
             Debug.Log("Todo ok, no hay obstaculos, toque el input");
 
             NarrativeManager.instance.OnPrepairForInteraction(); // desactivo camara, movimiento, etc
