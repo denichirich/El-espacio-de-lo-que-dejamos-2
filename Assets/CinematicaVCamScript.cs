@@ -15,6 +15,7 @@ public class CinematicaVCamScript : MonoBehaviour
     {
         NarrativeManager.instance.PostInteraction.AddListener(SwitchToThisCamera);
     }
+
     public void SwitchToThisCamera()
     {
         var director = GameObject.FindGameObjectWithTag(searchTagDirector).GetComponent<PlayableDirector>();
@@ -25,6 +26,8 @@ public class CinematicaVCamScript : MonoBehaviour
         CamerasManager.instance.SetCamera(cam);
         cam.Priority = 25;
         director.Play();
+
+
         Destroy(this.gameObject, (float)timeConf);
     }
 
