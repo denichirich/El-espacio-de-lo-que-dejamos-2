@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 2326245}
   - component: {fileID: 2326246}
   - component: {fileID: 2326247}
+  - component: {fileID: 2326248}
   m_Layer: 0
   m_Name: FreeLook
   m_TagString: Untagged
@@ -317,6 +318,14 @@ MonoBehaviour:
   m_Damping: 0
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 1
+--- !u!81 &2326248
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2326242}
+  m_Enabled: 1
 --- !u!1 &9759434
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +479,7 @@ RectTransform:
   m_GameObject: {fileID: 40901590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7752823, y: 1.7752823, z: 1.7752823}
   m_Children:
   - {fileID: 1326452807}
   m_Father: {fileID: 1061340209}
@@ -478,7 +487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -12.63, y: 57.7}
+  m_AnchoredPosition: {x: -12.63, y: 84.8}
   m_SizeDelta: {x: 190.8999, y: 57.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40901592
@@ -709,7 +718,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43636810}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
@@ -11822,7 +11831,7 @@ RectTransform:
   m_GameObject: {fileID: 320276688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2706, y: 1.2706, z: 1.2706}
   m_Children:
   - {fileID: 846797878}
   m_Father: {fileID: 1061340209}
@@ -11830,7 +11839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -8.799988, y: 297.6}
+  m_AnchoredPosition: {x: -8.799988, y: 338.94}
   m_SizeDelta: {x: 957.8, y: -415.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320276690
@@ -11880,8 +11889,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -12201,8 +12210,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -135, y: 11.1}
-  m_SizeDelta: {x: 269.2, y: 49.73}
+  m_AnchoredPosition: {x: -198.11, y: 22.9}
+  m_SizeDelta: {x: 560.1, y: 49.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &364505240
 MonoBehaviour:
@@ -12251,8 +12260,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 1.9
@@ -12322,7 +12331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &395282415
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13137,6 +13146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: arbolito flaco Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.2
@@ -13727,7 +13740,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672233057}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
@@ -14481,7 +14494,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804730698}
-  m_LocalRotation: {x: -0.011175614, y: 0.71639156, z: 0.011478063, w: 0.69751453}
+  m_LocalRotation: {x: -0.01119624, y: 0.71513563, z: 0.011457934, w: 0.6988022}
   m_LocalPosition: {x: -0.5999756, y: 0.8100004, z: 72.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19499,7 +19512,7 @@ RectTransform:
   m_GameObject: {fileID: 846797877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3343, y: 2.3343, z: 2.3343}
+  m_LocalScale: {x: 3.261484, y: 3.261484, z: 3.261484}
   m_Children:
   - {fileID: 186492603}
   - {fileID: 1421537178}
@@ -19509,7 +19522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -17.600006, y: -404.5}
+  m_AnchoredPosition: {x: -17.600006, y: -354.89}
   m_SizeDelta: {x: 168.49524, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &846797879
@@ -19845,6 +19858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: arbolito flaco Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 83.3
@@ -19991,6 +20008,107 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4989798390832459094, guid: b71abedd520beb54bbacdaaf14431324, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b71abedd520beb54bbacdaaf14431324, type: 3}
+--- !u!1 &945599962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+  m_PrefabInstance: {fileID: 590905343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &945599966
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945599962}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 62
+  DopplerLevel: 1
+  MinDistance: 6.53
+  MaxDistance: 54.9
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &963350184
 GameObject:
   m_ObjectHideFlags: 3
@@ -20270,7 +20388,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990045979}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
@@ -20294,8 +20412,8 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.7385845
-      value: 1.0019852
+      time: 0.55589104
+      value: 0.9972626
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -27920,6 +28038,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f375e18698a84846afdac0178ef02b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!81 &1335997868
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335997866}
+  m_Enabled: 1
 --- !u!1 &1354177344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fd9f7494cb8b94247bbd84010a5f1421, type: 3}
@@ -28766,6 +28892,10 @@ PrefabInstance:
     - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_Name
       value: arbolito flaco Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33797,7 +33927,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484444236}
-  m_LocalRotation: {x: -0.020252183, y: -0.062145222, z: 0.0004374466, w: -0.99786156}
+  m_LocalRotation: {x: -0.02025218, y: -0.06214525, z: 0.00043744667, w: -0.99786156}
   m_LocalPosition: {x: 1.4380398, y: -1.178864, z: -6.2513123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -38964,6 +39094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1534711099}
   - component: {fileID: 1534711100}
+  - component: {fileID: 1534711101}
   m_Layer: 11
   m_Name: CM StateDrivenCamera1
   m_TagString: Untagged
@@ -39061,6 +39192,14 @@ MonoBehaviour:
     m_ParentHash: 756556552
   - m_Hash: 1476472037
     m_ParentHash: 756556552
+--- !u!81 &1534711101
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534711098}
+  m_Enabled: 1
 --- !u!1 &1544225289
 GameObject:
   m_ObjectHideFlags: 0
@@ -39396,6 +39535,10 @@ PrefabInstance:
     - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_Name
       value: arbolito flaco Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39746,8 +39889,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 134.28265
-  MaxDistance: 191.53424
+  MinDistance: 78.61279
+  MaxDistance: 176.52869
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -39829,7 +39972,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681173741}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
@@ -39841,11 +39984,11 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
-  MinDistance: 134.28265
-  MaxDistance: 191.53424
+  DopplerLevel: 0.94
+  MinDistance: 2.16
+  MaxDistance: 10.65
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -39853,23 +39996,23 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.7385845
-      value: 1.0019852
+      time: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.99816895
-      value: 0.057186127
-      inSlope: 0.32687476
-      outSlope: 0.32687476
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.59232897
-      outWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -39908,7 +40051,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -40053,7 +40196,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681667979}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77f520806435c3e40b14ba64ed1ac911, type: 3}
@@ -50143,7 +50286,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823203240}
-  m_LocalRotation: {x: -0.017702535, y: 0.0037792847, z: 0.000046053843, w: 0.9998362}
+  m_LocalRotation: {x: -0.01770185, y: 0.009584592, z: 0.00011679665, w: 0.9997974}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -50303,6 +50446,10 @@ PrefabInstance:
     - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_Name
       value: arbolito flaco Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50868,8 +51015,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -137.2, y: 12}
-  m_SizeDelta: {x: 273.92, y: 50}
+  m_AnchoredPosition: {x: -194.6, y: 25.22}
+  m_SizeDelta: {x: 528.85, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2050588418
 MonoBehaviour:
@@ -50918,8 +51065,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 17.46
@@ -51445,7 +51592,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -4}
-  m_SizeDelta: {x: 480.8, y: -67.3}
+  m_SizeDelta: {x: 900, y: -67.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120080767
 MonoBehaviour:
@@ -51467,7 +51614,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hasta ac\xE1 llega el viaje por ahora, podes quedarte paseando si as\xED
+  m_text: "Hasta ac\xE1 llega el viaje por ahora,\npodes quedarte paseando si as\xED
     lo deseas\n\n\xA1Gracias por participar!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60e3597f6312a004a8675c826c49c873, type: 2}
@@ -51495,8 +51642,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -52209,13 +52356,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: arbolito flaco Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4157440150333388367, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 87.4
       objectReference: {fileID: 0}
     - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.7872715
+      value: -14.68
       objectReference: {fileID: 0}
     - target: {fileID: 6201657212707279376, guid: a8ae0bb74d0789e4ba608a019a5ede1e, type: 3}
       propertyPath: m_LocalPosition.z
